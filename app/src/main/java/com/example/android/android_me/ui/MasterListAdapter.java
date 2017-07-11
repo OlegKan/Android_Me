@@ -20,7 +20,6 @@ import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.GridView;
 import android.widget.ImageView;
 
 import java.util.List;
@@ -63,6 +62,7 @@ public class MasterListAdapter extends BaseAdapter {
     /**
      * Creates a new ImageView for each item referenced by the adapter
      */
+    @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
         ImageView imageView;
         if (convertView == null) {
